@@ -33,7 +33,7 @@ const getMejorAjuste = (el) =>{
         for(let puntoo of el){
             errAux+=Math.pow(puntoo["y"] - FdeX(puntoo['x'], poll), 2)
         }
-        if(errAux == NaN){
+        if(isNaN(errAux)){
             break
         }
         console.log('Error con ' + i.toString() + ":" + errAux.toString())
